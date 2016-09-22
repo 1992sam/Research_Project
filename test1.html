@@ -1,0 +1,22 @@
+<html>
+<head> Map</head>
+<script = "text/javascript">
+function resizeIframe(id)
+		{
+			var fheight;
+			var fwidth;
+			 if(document.getElementbyID){
+			 fheight = document.getElementbyID(id).contentWindow.document.body.scrollHeight;
+			 fwdth = document.getElementbyID(id).contentWindow.document.body.scrollWidth;
+			 }
+			 document.getElementbyID(id).height  = fheight + "px";
+			 document.getElementbyID(id).width  = fwidth + "px";
+		} 
+</script>
+</br>
+<body>
+<iframe src = "file://C:\Users\Sameer\Desktop\Draft\test.html" id = "iFrame1" onload="resizeIframe(iFrame1)"></iframe>
+
+
+</body>
+</html>
