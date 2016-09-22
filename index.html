@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>Research Project&mdash;1</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="https://js.arcgis.com/4.0/esri/css/main.css">
+		<script src="jquery-1.6.1.js"></script>
+		<script src="js/drop-down.js"></script> 
+		<script src="https://js.arcgis.com/4.0/"></script>	
+		<script = "text/javascript">
+		function resizeIframe(id)
+		{
+			var fheight;
+			var fwidth;
+			 if(document.getElementbyID){
+			 fheight = document.getElementbyID(id).contentWindow.document.body.scrollHeight;
+			 fwdth = document.getElementbyID(id).contentWindow.document.body.scrollWidth;
+			 }
+			 document.getElementbyID(id).height  = fheight + "px";
+			 document.getElementbyID(id).width  = fwidth + "px";
+		}
+		</script>
+	</head>
+	
+	<body>		
+
+		<header>
+			<div class="innertube">
+				<h1>Research Project 1 </h1>
+			</div>
+		</header>
+		
+		<div id="wrapper">
+		
+			<main>
+			
+				<!--<div id="content">
+					<div class="innertube">-->
+					<iframe src = "file://C:\Users\Sameer\Desktop\Draft\test.html" width = "900" id = "iFrame1" onload = "resizeIframe(iFrame1)"></iframe>	
+						
+						 
+						
+					<!--</div>
+				</div>-->
+				</br>sameer
+			</main>
+			
+			<nav>
+				<div class="innertube">
+					 
+					 <form id="form1">
+						<fieldset>
+						<legend><h3>Dropdown<h3></legend>
+						<select name="mydropdown">
+							<option id="menu1">menu1</option>
+							<option id="menu2">menu2</option>
+							<option id="menu3">menu3</option>
+						</select>
+						<select name="mydropdown">
+							<option id="menu4">menu4</option>
+							<option id="menu5">menu5</option>
+							<option id="menu6">menu6</option>
+						</select>
+						</fieldset>
+						<fieldset>
+						<legend><h3>Sliders</h3></legend>
+						<p>Slider1</br></p>
+						<input type="range" min="0" max="100" value="00" step="5" onchange="slider1function()" />
+						<p>Slider2</br></p>
+						<input type="range" min="0" max="100" value="50" step="2" onchange="slider2function()" />
+						</fieldset>
+						<fieldset>
+							<legend><h3>Checkboxes</h3></legend>
+							<input type="checkbox" name="option1">Option1</br>
+							<input type="checkbox" name="option2">Option2</br>
+							<input type="checkbox" name="option3">Option3</br>
+							<input type="checkbox" name="option4">Option4</br>
+							<input type="checkbox" name="option5">Option5</br>
+							<input type="checkbox" name="option6">Option6</br>
+						</fieldset>
+						<fieldset>
+							<button type="submit" id="sub" value="submit" onClick="showMap()"> Show </button>
+							<button type="reset"  value="reset"> Reset </button>
+						</fieldset>
+					</form>
+					
+				</div>
+			</nav>
+		
+		</div>
+		
+	<!--	<footer>
+			<div class="innertube">
+				<p>Footer...</p>
+			</div>
+		</footer>-->
+	
+	</body>
+</html>
